@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 .withActivity(this)
                 .withRequestCode(1)
                 .withFilterDirectories(false)
-                .withFilter(Pattern.compile(".*\\.txt$"))
+                .withFilter(Pattern.compile("(.*?)\\.(doc|docx)$"))
                 .withHiddenFiles(true)
                 .start();
     }
